@@ -1,0 +1,5 @@
+@mixin font($wt, $sz, $cr) {
+    font-weight: map-get($ft-wt, $wt);
+    font-size: map-get($ft-sz, $sz);
+    color: map-get($clr, $cr);
+}

@@ -1,0 +1,40 @@
+//Colors
+$clr: (
+    primary: hsl(300, 43%, 22%),
+    secondary: hsl(333, 80%, 67%),
+    accent: hsl(28, 84%, 61%),
+    glow: hsl(28, 80%, 80%),
+    dark: hsl(302, 10%, 53%),
+    light: hsl(300, 24%, 96%),
+    'white': hsl(0, 0%, 100%),
+);
+
+//Fonts
+$ft-fy: 'League Spartan', sans-serif;
+
+$ft-wt: (
+    thin: 400,
+    regular: 500,
+    bold: 700,
+);
+
+$ft-sz: (
+    lg: clamp(calc(36rem / 16), 4vw, calc(50rem / 16)),
+    md: calc(17rem / 16),
+    sm: calc(15rem / 16),
+);
+
+//Spacing
+$spc: (
+    xl: clamp(49px, 5.1vw, 73px),
+    lg: 40px,
+    md: 32px,
+    sm: 16px,
+);
+
+//Containers
+$wdt: (
+    main: min(calc(100%), calc(1110rem / 16)),
+    review: clamp(min(100%, 327px), 51vw, calc(444rem / 16)),
+    comment: clamp(min(100%, 327px), 51vw, calc(350rem / 16)),
+)

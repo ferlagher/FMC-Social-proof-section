@@ -1,0 +1,71 @@
+//Comments entrance
+@for $i from 1 through 3 {
+    .reviews__card:nth-child(#{$i}) {
+        opacity: 0;
+        animation: fromRight 0.5s calc($i / 5)+s ease-in-out forwards;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+//Comments entrance
+@for $i from 1 through 3 {
+    .comments__card:nth-child(#{$i}) {
+        opacity: 0;
+        animation: fromBelow 0.5s calc($i / 5)+s ease-in-out forwards;
+    }
+}
+
+@keyframes fromBelow {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+//Star glow
+.stars {
+    svg {
+        fill: map-get($clr, 'accent');
+    }
+}
+
+@for $i from 1 through 5 {
+    .stars {
+        svg:nth-child(#{$i}) {
+            animation: glow 10S calc($i / 10)+s infinite;
+        }
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: none;
+        fill: map-get($clr, 'accent');
+    }
+    5% {
+        filter: drop-shadow(0 0 5px map-get($clr, 'glow'));
+        fill: map-get($clr, 'glow');
+    }
+    15% {
+        filter: none;
+        fill: map-get($clr, 'accent');
+    }
+    100% {
+        filter: none;
+        fill: map-get($clr, 'accent');
+    }
+}

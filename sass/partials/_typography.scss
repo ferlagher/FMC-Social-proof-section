@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.title{
+    h1 {
+        @include font('bold', 'lg', 'primary');
+        max-width: calc(325rem / 16)
+    }
+    p {
+        @include font('regular', 'md', 'dark');
+        max-width: calc(410rem / 16);
+        line-height: 1.25em;
+        margin-top: 1.25em
+    }
+}
+
+.reviews {
+    b {
+        @include font('bold', 'sm', 'primary');
+    }
+}
+
+.comments {
+    h2 {
+        @include font('bold', 'sm', 'white');
+        margin-bottom: 0.3em
+    }
+    span {
+        @include font('thin', 'sm', 'secondary');
+    }
+    p {
+        @include font('thin', 'sm', 'light');
+        line-height: 1.5em;
+        letter-spacing: 0.02em;
+        margin-top: 2em
+    }
+}
+
+footer {
+        @include font('thin', 'sm', 'dark');
+    a, a:visited {
+        color: map-get($clr, 'secondary');
+        text-decoration: none;
+    }
+}

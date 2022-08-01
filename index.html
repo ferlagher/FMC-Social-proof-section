@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Frontend Mentor | Social proof section</title>
 </head>
@@ -19,7 +20,7 @@
         </section>
 
         <section class="reviews">
-            <div class="rating">
+            <div class="reviews__card">
                 <div class="stars">
                     <svg width="17" height="16">
                         <use xlink:href="./images/icon-star.svg#star"></use>
@@ -39,7 +40,7 @@
                 </div>
                 <b>Rated 5 Stars in Reviews</b>
             </div>
-            <div class="rating">
+            <div class="reviews__card">
                 <div class="stars">
                     <svg width="17" height="16">
                         <use xlink:href="./images/icon-star.svg#star"></use>
@@ -59,7 +60,7 @@
                 </div>
                 <b>Rated 5 Stars in Report Guru</b>
             </div>
-            <div class="rating">
+            <div class="reviews__card">
                 <div class="stars">
                     <svg width="17" height="16">
                         <use xlink:href="./images/icon-star.svg#star"></use>
@@ -82,38 +83,44 @@
         </section>
 
         <section class="comments">
-            <article>
-                <div class="user">
+            <article class="comments__card">
+                <div class="comments__user">
                     <img src="./images/image-colton.jpg" alt="avatar">
-                    <h2>Colton Smith</h2>
-                    <span>Verified Buyer</span>
+                    <div>
+                        <h2>Colton Smith</h2>
+                        <span>Verified Buyer</span>
+                    </div>
                 </div>
                 <p>
-                    "We needed the same printed design as the one we had ordered a week prior.
+                    " We needed the same printed design as the one we had ordered a week prior.
                     Not only did they find the original order, but we also received it in time.
-                    Excellent!"
+                    Excellent! "
                 </p>
             </article>
-            <article>
-                <div class="user">
+            <article class="comments__card">
+                <div class="comments__user">
                     <img src="./images/image-irene.jpg" alt="avatar">
-                    <h2>Irene Roberts</h2>
-                    <span>Verified Buyer</span>
+                    <div>
+                        <h2>Irene Roberts</h2>
+                        <span>Verified Buyer</span>
+                    </div>
                 </div>
                 <p>
-                    "Customer service is always excellent and very quick turn around. Completely
-                    delighted with the simplicity of the purchase and the speed of delivery."
+                    " Customer service is always excellent and very quick turn around. Completely
+                    delighted with the simplicity of the purchase and the speed of delivery. "
                 </p>
             </article>
-            <article>
-                <div class="user">
+            <article class="comments__card">
+                <div class="comments__user">
                     <img src="./images/image-anne.jpg" alt="avatar">
-                    <h2>Anne Wallace</h2>
-                    <span>Verified Buyer</span>
+                    <div>
+                        <h2>Anne Wallace</h2>
+                        <span>Verified Buyer</span>
+                    </div>
                 </div>
                 <p>
-                    "Put an order with this company and can only praise them for the very high
-                    standard. Will definitely use them again and recommend them to everyone!"
+                    " Put an order with this company and can only praise them for the very high
+                    standard. Will definitely use them again and recommend them to everyone! "
                 </p>
             </article>
         </section>

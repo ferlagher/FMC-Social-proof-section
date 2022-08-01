@@ -1,0 +1,97 @@
+body {
+    background-color: map-get($clr, 'white');
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto min-content;
+    justify-items: center;
+    align-items: center;
+}
+
+main {
+    max-width: map-get($wdt, 'main');
+    height: fit-content;
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: map-get($spc, 'xl');
+}
+
+.title {
+    flex-basis: 37%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    flex-basis: 56%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__card {
+        &:nth-child(1) {
+            margin-right: map-get($spc, 'sm')*6;
+        }
+        &:nth-child(2) {
+            margin-right: map-get($spc, 'sm')*3;
+            margin-left: map-get($spc, 'sm')*3;
+        }
+        &:nth-child(3) {
+            margin-left: map-get($spc, 'sm')*6;
+        }
+    }
+}
+
+.comments {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    &__card:nth-child(1) {
+        margin-bottom: map-get($spc, 'sm')*2;
+    }
+    &__card:nth-child(2) {
+        margin: map-get($spc, 'sm') 0;
+    }
+    &__card:nth-child(3) {
+        margin-top: map-get($spc, 'sm')*2;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    }
+    main {
+        padding: map-get($spc, 'xl') 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        align-items: center;
+        text-align: center;
+    }
+    .reviews {
+        width: 100%;
+        align-items: center;
+        &__card:nth-child(n) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .comments {
+        flex-direction: column;
+        align-items: center;
+        &__card:nth-child(n) {
+            margin: 0
+        }
+    }
+}
