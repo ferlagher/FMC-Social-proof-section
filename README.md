@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-flex-page-entrance-animations-glowing-stars-mWVBasRPs7
 - Live Site URL: https://ferlagher.github.io/FMC-Social-proof-section
 
 ## My process
